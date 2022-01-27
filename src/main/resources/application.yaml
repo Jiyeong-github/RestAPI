@@ -1,0 +1,16 @@
+spring:
+  mvc:
+    view:
+      prefix: /templates/
+      suffix: .jsp
+  devtools:
+    livereload:
+      enabled: true
+logging:
+  level:
+    web: DEBUG
+mybatis:
+  mapper-locations: mybatis-mapper/**/*.xml
+  type-aliases-package: com.inzent.restapi
+server:
+  ports: 8090
